@@ -1,0 +1,514 @@
+@font-face {
+    font-family: PTSansRegular;
+    src: url("../fonts/pt_sans_regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+/***** BASE CSS *****/
+input:focus:not(#InputEmail),
+textarea:focus {
+    outline: 1px solid #666;
+    background-color: transparent;
+}
+
+body {
+    font-family: PTSansRegular;
+    font-size:14px;
+    margin:0;
+    padding: 0;  
+}
+.soc-buttons p {   
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+a {
+    text-align: center;
+    color: #d9d2be;
+}
+#header {
+    -webkit-box-shadow: 
+    0px 120px 160px 0px rgba(76,60,54,0.95) inset, 
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+     ;
+    -moz-box-shadow: 
+    0px 120px 160px 0px rgba(76,60,54,0.95) inset, 
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+    ;
+     box-shadow: 
+    0px 120px 160px 0px rgba(76,60,54,0.95) inset, 
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+    ;
+    background: url('../images/imeg2.jpg') no-repeat;
+    min-height: 525px;
+    padding-top: 22px;   
+   
+}
+.fa {
+   font-size:40px; 
+   color:rgb(217,210,190);
+}
+.fa-phone {
+    font-size: 30px;
+    padding-right: 20px;
+}
+#input-header{
+  -webkit-box-shadow: 
+  0px 1px 1px 0px rgba(0,0,0, 1) inset, 
+  0px -2px 0px -1px rgba(255,255,255,0.2) inset
+  ;
+  box-shadow: 
+  0px 1px 1px 0px rgba(0,0,0, 1) inset, 
+  0px -2px 0px -1px rgba(255,255,255,0.2) inset
+  ;
+  -moz-box-shadow: 
+  0px 1px 1px 0px rgba(0,0,0, 1) inset, 
+  0px -2px 0px -1px rgba(255,255,255,0.2) inset
+  ;
+  background-color: rgba(93,73,65,0.7);
+  padding: 5px;
+  border: none;
+  border-radius: 3px; 
+}
+.soc-buttons {
+    padding-left: 27px;
+}
+.menuHeader li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 34px;
+}
+.menuHeader li:last-child {
+    margin-right: 0;
+    margin-left: -9px;
+}
+.paddingLVal {
+    padding-left: 4px;
+}
+.logo{
+    width: 93px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d9d2be;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.logo img {
+    margin-bottom: 4px;
+}
+.phonecall{
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+.block-e-mail{
+    padding-top: 116px;
+    padding-left: 83px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.e-mail {
+    height: 200px;
+    max-width: 413px;
+    border-top: 3px solid #fff;
+    background-color: rgba(90,66,57,0.9);
+    padding: 12px 29px;
+    font-size: 15px; 
+}
+.e-mail p {
+    color: #d9d2be;
+}
+.form-mail {
+    width: 100%;
+    font-size: 16px;
+}
+#InputEmail {
+    border: none;
+    width: 67%;
+    padding: 4px 9px;
+}
+button.btn {
+    margin-left: -5px;
+    background-color: rgb(244,115,82);
+    color:#fff;
+    display: inline-block;
+    border:none;
+    padding: 4px 8px;
+
+}
+button.btn:hover {
+    background-color: rgb(244,100,10);
+}
+button.btn:hover~span {
+    border-left: 5px solid rgb(244,100,10);
+}
+.form-inline span { 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left: 5px solid rgb(244,115,82);
+}
+h2 {
+    font-weight: normal;
+    color: #fff;
+}
+.content {
+    min-height: 312px;
+    padding-top: 32px;
+    padding-right: 36px;    
+}
+.border-right {
+    border-right: 1px solid rgb(217,210,190);
+    padding-right: 40px;
+    padding-left: 10px;
+}
+.mainText {
+    text-align:right;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.border-rightp .mainText {
+    margin-bottom: 0;
+}
+h1.mainText,.rightTopic {
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+}
+.content-right {
+    padding-left: 6px;
+}
+.rightP {
+    text-transform: uppercase;
+}
+.content p {
+    color:#978585;
+}
+.rightblock p {
+    margin:0;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color:#978585;
+}
+.buttonLink {
+    background:-moz-linear-gradient(rgb(140,121,116),rgb(115,96,92));
+    background:-webkit-linear-gradient(rgb(140,121,116),rgb(115,96,92));
+    background:-o-linear-gradient(rgb(140,121,116),rgb(115,96,92));
+    background:-ms-linear-gradient(rgb(140,121,116),rgb(115,96,92));
+    background:linear-gradient(rgb(140,121,116),rgb(115,96,92));
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    display:inline-block;
+    font-size: 16px;
+}
+a.buttonLink:hover {
+    background: rgb(130,100,85);
+}
+a.buttonLink:hover~span {
+    border-left: 6px solid rgb(130,100,85);
+}
+.blockForMap { 
+    background-size: cover;
+    padding:0 64px ;
+}
+.blockForForm {
+    padding-left: 0;
+}
+#map {
+    display: block;
+    height: 326px;
+}
+.content img {
+    max-height: 127px;
+    max-width: 220px;
+}
+.rightblock span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-left: 6px solid rgb(127,108,104);
+    bottom: -1px;
+}
+#centerImage {
+    -webkit-box-shadow:  
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+    ;
+    -moz-box-shadow:  
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+    ;
+    box-shadow:  
+    120px 0px 100px 0px rgba(124,103,92,1) inset,
+    -210px 0px 170px 0px rgba(124,103,92,1) inset
+    ; 
+    background: url('../images/imeg1.png') no-repeat;
+    min-height: 422px;      
+}
+a:hover {
+   text-decoration: none;
+   color: #fff; 
+}
+
+.contacts {
+    min-height: 562px;
+}
+.title {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 68px;
+  margin-left: 4%;
+  width:87%;
+  font-size: 2.5em;
+  letter-spacing: 2px
+}
+.title:before,
+.title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background: #b0b4bd;
+  border: solid #FFF;
+  border-width: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+}
+.title:before {
+  margin-left: -100%;
+}
+.title:after {
+  margin-right: -100%;
+}
+.claim {
+    width: 93%;
+}
+.form-group, form.claim textarea{
+   margin-bottom: 15px;
+   width: 100%; 
+}
+form.claim input, form.claim textarea {
+    width: 100%; 
+    padding:5px 10px;    
+    background-color: rgba(202, 190, 181, 0.4);
+    border:none;
+    border-radius: 2px;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+form.claim textarea {
+    height: 79px;
+    margin-bottom: 10px;
+}
+
+input::-moz-placeholder { color: #000; }
+input::-webkit-input-placeholder { color: #000; }
+textarea::-moz-placeholder { color: #000; }
+textarea::-webkit-input-placeholder { color: #000; }
+
+.claim .button-submit {
+    font-size: 18px;
+    font-weight: bold;   
+    padding: 10px 0;
+    width: 30%;
+    color: #d9d2be;
+    background-color: #6a4c43;
+    box-shadow: 1px 2px 1px #000;
+    -webkit-box-shadow: 1px 2px 1px #000;
+    -moz-box-shadow: 1px 2px 1px #000;
+}
+.claim .button-submit:hover {
+    background-color: #523C35;
+}
+footer {
+    min-height: 109px;
+    background-color: rgb(136,116,103);
+    padding-left: 21.5%;
+    padding-top: 5px;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-right: 25px;
+}
+footer li a {
+    width: 30px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+footer li a p {
+    margin-top: 0;
+    font-size: 18px;
+}
+footer li:nth-of-type(3) {
+    padding-right: 105px;
+    padding-left: 85px
+}
+
+.error{
+    color:red;
+}
+
+.overlay{
+  display:block;
+  height:150px;
+  width: 280px;
+  padding-left:20px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width:90%;
+    }
+    .inputHeader {
+        padding-left:5px;
+    }
+    #input-header {
+        width: 65%;
+    }
+    h1 {
+        font-size: 1.3em !important;
+    }
+    .border-right {
+    border-right: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+    #centerImage, #map, .blockForForm, .information {
+        background-position: center center;
+        margin-bottom: 20px;
+    }
+    h1.title {
+        margin-left: 7%;
+        width: 70%;
+    }
+    .blockForForm {
+        padding-left: 7%;
+    }
+    footer {
+        padding-left: 0;
+    }
+    footer li:nth-of-type(3) {
+        padding-right: 90px;
+        padding-left: 80px;
+    }
+}
+@media only screen and (max-width: 768px) {
+   .phonecall {
+        text-align: center;
+    } 
+    #header {
+       text-align: center; 
+    }
+    .content {
+        min-height: 100px;
+    }
+    footer li:nth-of-type(3) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    footer {
+        text-align: center;
+    }
+    .block-e-mail {
+        padding-left: 0px;
+    }
+    .e-mail {
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainText {
+      text-align: inherit;  
+    }
+    .blockForImg {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 623px) {
+    footer li {
+    padding-right: 0 5px;
+    }   
+}
+@media only screen and (max-width: 623px) {
+    .menuHeader li{
+        margin-right: 10px;  
+    }
+    ul.menuHeader {
+        padding-left: 0px;
+    }
+    .block-e-mail {
+       padding-top: 30px; 
+    }   
+    .form-mail{
+        margin-top: 15px;
+    }
+    #InputEmail{
+        width: 60%
+    }
+    #centerImage {
+        display: none;
+    }
+    .blockForMap {
+        padding: 0 0;
+    }
+    .title {
+        margin-top:10px;
+    }
+    .claim .button-submit{
+        width:60%;
+    }
+    footer .container{
+        padding: 0;
+    }
+    footer ul {
+        padding-left: 0;
+    }
+      footer li {
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    footer li:nth-of-type(3) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .blockForForm {
+    padding-left: 0;
+    }
+}
+@media only screen and (max-width: 375px){
+    .e-mail {
+        padding-top: 0;
+    }
+    .e-mail h2, .e-mail p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .form-mail {
+        margin-top: 2px;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 990px){
+        .rightblock {
+        float: right;
+    }
+        .phonecall {
+        text-align: left;
+    }
+}

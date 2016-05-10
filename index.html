@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Icons -->
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/nicescroll.min.js"></script>
+
+</head>
+<body>
+	<div id="header">
+		<div class = "container">
+			<div class="row">
+
+				<div class="col-md-5 col-xs-12 col-sm-7">
+					<div class="soc-buttons">
+						<ul class="menuHeader">
+							<li>
+								<a href="#" target="_blank">
+									<img src="images/ikon-star.png" height="26" width="26" alt="location">
+									<p>О нас</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="images/news.png" height="26" width="26" alt="location">
+									<p>Статьи</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="images/photo.png" height="26" width="26" alt="location">
+									<p>Галереи</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="images/location.png" height="26" width="26" alt="location">
+									<p>Адреса</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 paddingLVal hidden-xs hidden-sm">
+					<div class="logo">
+						<img src="images/камень.png" height="49" width="92" alt="logo">Камень.РФ</div>
+				</div>
+
+				<div class="col-md-5 col-sm-4 phonecall col-xs-12">
+					<a href="tel:+380977375961"><i class="fa fa-phone" aria-hidden="true"></i>+380977375961</a>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="row block-e-mail">
+					<div class="e-mail">
+						<h2>Скидка 20% прямо сейчас!</h2>
+						<p>
+							Наши специалисты-консультанты всегда готовы помочь Вам в выборе отделки из камня
+						</p>
+						<form class="form-inline" role="form" method="GET" action="submit_now.php">
+							<div class="form-mail">
+								<label class="sr-only" for="InputEmail">Email</label>
+								<input type="email" class="form-control " id="InputEmail" placeholder="e-mail">
+								<button type="submit" class="btn">Заказать</button>
+								<span></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container information">
+		<div class="row">
+
+			<div class="col-md-5 col-md-offset-1 col-sm-5 col-xs-10 content ">
+				<div class="border-right">
+					<h1 class="mainText">Гранитная мастерская: изделия из камня</h1>
+					<p class="mainText">
+						Изделия из натурального камня: мрамора, гранита и других видов, пользуются широкой популярностью по всему миру. Неповторимые рисунки и текстура, великолепные эксплуатационные качества и отличная цена выделяют продукцию нашей мастерской
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-7 col-xs-10 content content-right ">
+				<h1 class="rightTopic">Свежие новости</h1>
+				<div class="row">
+					<div class="col-md-5 col-sm-10 blockForImg">
+						<img src="images/24.jpg" alt="fresh News" class=""></div>
+					<div class="col-md-6 col-sm-10 rightblock">
+						<p class="rightP">Распродажа!</p>
+						<p>
+							Крема Марфил Стандарт 20 mм и сопутствующих товаров по супернизким ценам
+						</p>
+						<a href="#" target="_blank" class="buttonLink">Читать</a>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="centerImage" class="container-fluid"></div>
+
+	<div class="contacts">
+		<div class="container">
+			<h1 class="title col-sm-10">Контакты</h1>
+			<div class="row">
+
+				<div class="col-md-6 col-sm-10 col-sm-12 blockForMap">
+					<div id="map"></div>
+				</div>
+
+				<div class=" col-md-5 col-sm-10 blockForForm">
+					<form class="claim" id="commentForm" action="submit_now.php" method="POST">
+						<div class="form-group">
+							<input type="text" class="text" placeholder="Имя" name="name"></div>
+						<div class="form-group">
+							<input type="tel" placeholder="Контактный телефон" name="tel"></div>
+						<div class="form-group">
+							<input type="text" placeholder="Контактный e-mail" name="email"></div>
+						<div class="form-group">
+							<input type="text" class="text" placeholder="Тема сообщения" name="task"></div>
+						<textarea  class="" placeholder="Текст сообщения" name="comment"></textarea>
+						<input type="submit" class="button-submit" value="Отправить"></form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<ul>
+						<li>
+							<a href="#" target="_blank" class="">
+								<img src="images/ikon-star.png" height="26" width="26" alt="location">
+								<p>О нас</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="">
+								<img src="images/news.png" height="26" width="26" alt="location">
+								<p>Статьи</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class=""> <i class="fa fa-copyright" aria-hidden="true"></i>
+								<p>2013, kamen.ru</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="">
+								<img src="images/photo.png" height="26" width="26" alt="location">
+								<p>Галереи</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="">
+								<img src="images/location.png" height="26" width="26" alt="location">
+								<p>Адреса</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
